@@ -1,0 +1,36 @@
+#===========================================================#
+HOW-TO test config 'SNOW' admin features w/ smartcontractgui.xyz
+by: 0xIntelTech _ 010325
+#===========================================================#
+
+SETUP:
+    ADDR_TREAS_EOA = address(0xF5F3b513b77182D83010dbe49C90EBDfF60e9964); // admin_010325
+    ADDR_DEV_EOA = address(0x9c43B089B2cc3a378497EAEd4E09A42889Bf98a7); // admin_010325
+    ADDR_FEE_EOA = address(0x4A797bbe31f827Bb27ce9aa68Bde0a6EB915ef40); // admin_010325
+
+STEPS:
+1) manually create LPs (your treasury EOA has 1,000,000 SNOW)
+    ADDR_ZAP = address(0xC2db979E8c9546b53deE21109B0bCf855ef7b716); // ZapvV3 v0.1
+    ADDR_SNOW = address(0x2d67806d64b5A89Da8595fdc20C2D5e5e574feF3); // SnowToken v0.1
+    ADDR_CHEF = address(0x35f3Bca1385149b76A644B84187dBB45fff56970); // MasterChef v0.1
+
+2) go-to & connect your devaddr wallet to 'smartcontractgui.xyz'
+	- your devaddr is set as 'owner' for everything
+
+3) add contracts to "smartcontractgui.xyz" (screen shots)
+	- set contract name (can be anything, but suggest .sol file names)
+	- set contract address
+	- copy & paste text from contract .abi file
+
+4) config tax settings for SnowToken using smartcontractgui.xyz (screen shots)
+	- functions: setPair, setProxy, setMaxTaxRate, setStaticTaxRate
+
+5) add farms to MasterChef using smartcontractgui.xyz (screen shots)
+	- function: add(...)
+
+6) test other desired features as normal
+
+
+_END_
+#===========================================================#
+#===========================================================#
